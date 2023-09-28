@@ -1,0 +1,12 @@
+mariam => ecommerce
+nada => 
+dalia=> 
+haytham => ecommerce
+peter => ecommerce
+rana => ecommerce
+ibraheem => library
+esraa => ecommerce
+jena => 
+khaled => elearning
+shimaa, mariez => coffee shop app
+yousief => elearning

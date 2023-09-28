@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "6099ba4f-b5e0-4d76-9783-6b12beba5eb1",
+		"name": "sep2023",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17853895"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fName\":\"marwa\",\r\n    \"lName\":\"radwan\",\r\n    \"password\":\"Testing@123!\",\r\n    \"countryCode\":\"ar-EG\",\r\n    \"phone\":\"01010101010\",\r\n    \"email\":\"marwa@test.com\",\r\n    \"gender\":\"female\",\r\n    \"dOfBirth\":\"1985-6-28\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_url}}users/add",
+									"host": [
+										"{{local_url}}users"
+									],
+									"path": [
+										"add"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "tasks",
+			"item": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local_url",
+			"value": "http:///localhost:3000/",
+			"type": "string"
+		}
+	]
+}

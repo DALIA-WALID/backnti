@@ -1,0 +1,54 @@
+Todo app
+user => fName, lName, email, phone, password, status, image, gender, dOfBirth, createdAt, updatedAt, addresses : [
+    { addrName, addrDetails }
+]
+tasks => type(txt, image, video) , title, content, userAssigned, file
+
+functions
+=> register
+=> login
+=> logout
+=> view all users
+=> show profile
+=> edit user
+=> view single user
+=> del user
+=> change status
+=> delete all users
+=> add addresses, edit, del
+=> edit profile
+
+=> change image profile
+
+=> show all tasks
+add tasks
+edit
+del
+assign
+
+
+==> table user, task
+
+
+123  =>   987  
+987   => 151211
+
+
+
+
+add user {name:"abc", password:"123"}
+
+profile => { name:"abc", password:"ey......579" }
+
+
+user=> name=> "xyz"
+
+{name:"abc"} >>>>   password ey 54845154, name => xyz
+
+
+
+
+
+
+
+
