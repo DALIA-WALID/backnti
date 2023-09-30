@@ -44,13 +44,6 @@ const userSchema = mongoose.Schema({
         }
     },
     
-    cridetcard: {
-        type: String,
-        trim: true,
-        required: true,
-        match: /^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$/
-        
-    },
     gender: {
         type:String,
         trim:true,
@@ -59,8 +52,7 @@ const userSchema = mongoose.Schema({
    
     dOfBirth:{
         type:Date,
-        max:"2020-01-01",
-        min:"1950-1-1"
+       
     },
     addresses: [
         {
@@ -98,14 +90,7 @@ const userSchema = mongoose.Schema({
         enum : ["admin", "user"],
         default: "user"
     },
-    tokens:[
-        {
-            token:{
-                type:String,
-                required:true
-            }
-        }
-    ]
+   
 },
 
 {

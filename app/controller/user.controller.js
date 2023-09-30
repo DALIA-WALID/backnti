@@ -1,5 +1,5 @@
 const userModel = require("../../database/models/user.model")
-const { resGenerator, fileHandler } = require("../helper")
+const { resGenerator } = require("../helper")
 class User {
     static addUser = async (req, res) => {
         try {
@@ -142,17 +142,6 @@ class User {
     }
     }
 
-    static uploadImage = async(req, res) => {
-        try{
-            const newName = fileHandler(req)
-            req.user.image = newName.replace("public", "")
-            await req.user.save()
-            resGenerator(res, 200, true, req.user, "img uploaded")
-        }
-        catch (e) {
-            resGenerator(res, 500, false, e.message, "error in upload")
-        }
-    }
 
 }
 module.exports = User

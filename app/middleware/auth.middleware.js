@@ -10,13 +10,13 @@ const authUser = async(req, res, next)=>{
             _id: decoded._id,
             "tokens.token": token
         })
-        if(!userData) throw new Error("unauthorized")
+        if(!userData) throw new Error(" you are unauthorized")
         req.user = userData
         req.token = token
         next()
     }
     catch(e){
-        resGenerator(res, 500, false, e.message, "unauthorized")
+        resGenerator(res, 500, false, e.message, " you are unauthorized")
     }
 } 
 const authAdmin = async(req, res, next)=>{

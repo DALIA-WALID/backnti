@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const validator = require("validator")
 const productschema = mongoose.Schema({
-    title:{
+    productName:{
         type:String, 
         trim:true, 
         required:true
